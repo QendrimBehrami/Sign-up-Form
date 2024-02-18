@@ -129,6 +129,14 @@ input:focus {
   font-style: italic;
 }
 
+input:invalid:not(:placeholder-shown) {
+  border: 1.5px solid red;
+}
+
+input:valid:not(:placeholder-shown) {
+  border: 1.5px solid green;
+}
+
 #create-account {
   flex: 0 1 100%;
   margin-top: 2rem;
